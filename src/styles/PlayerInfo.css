@@ -1,0 +1,70 @@
+.player-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.player-info.active {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.player-info h2 {
+  margin: 0 0 1rem;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.player-info input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.player-info .time {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.player-info.white {
+  background-color: #fff;
+}
+
+.player-info.black {
+  background-color: #f8f8f8;
+}
+
+.captured-pieces {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.captured-piece {
+  font-size: 45px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.captured-piece.white {
+  color: #fff;
+  text-shadow: 0 0 3px #000, 0 0 5px #000;
+}
+
+.captured-piece.black {
+  color: #000;
+  text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+}
